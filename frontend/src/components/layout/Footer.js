@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex flex-col mb-6">
@@ -62,29 +62,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-display font-semibold text-white mb-5 text-sm uppercase tracking-widest">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm text-gray-400">
-                <FaEnvelope className="text-bgi-primary mt-0.5 flex-shrink-0" size={14} />
-                <a href="mailto:info@bgihackathon.in" className="hover:text-white transition-colors">info@bgihackathon.in</a>
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-400">
-                <FaMapMarkerAlt className="text-bgi-primary mt-0.5 flex-shrink-0" size={14} />
-                <span>Bansal Group of Institutes, Bhopal</span>
-              </li>
-              <li className="flex items-center gap-3 mt-4">
-                <a 
-                  href="https://bgihackathon.in/contact-us" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-primary px-4 py-2 rounded-lg text-xs font-display font-bold"
-                >
-                  Contact Form
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-bgi-border flex flex-col sm:flex-row items-center justify-between gap-4">

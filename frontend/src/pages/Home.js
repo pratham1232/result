@@ -129,31 +129,8 @@ const Home = () => {
               View Results
               <FaArrowRight />
             </Link>
-            <a href="https://bgihackathon.in" target="_blank" rel="noopener noreferrer"
-              className="btn-cyber px-8 py-4 rounded-xl text-base flex items-center gap-3 justify-center">
-              <FaRocket />
-              Register Now
-            </a>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="mt-16 grid grid-cols-3 gap-6 max-w-lg mx-auto"
-          >
-            {[
-              { num: '500+', label: 'Teams' },
-              { num: '₹6 Lakh', label: 'Prize Pool' },
-              { num: '48hrs', label: 'Duration' },
-            ].map(({ num, label }) => (
-              <div key={label} className="text-center">
-                <div className="font-display font-black text-2xl md:text-3xl text-bgi-primary neon-text-sm">{num}</div>
-                <div className="text-gray-400 text-xs font-mono mt-1 uppercase tracking-widest">{label}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         {/* Scroll indicator */}
@@ -167,41 +144,6 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* About Section */}
-      <section className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <div className="inline-block px-4 py-1.5 rounded-full border border-bgi-primary/30 bg-bgi-primary/5 text-bgi-primary text-xs font-mono uppercase tracking-widest mb-4">
-                About The Event
-              </div>
-              <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-6">
-                What is <span className="gradient-text-cyan">BGI Hackathon?</span>
-              </h2>
-              <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed font-body">
-                BGI Hackathon is a high-energy innovation challenge that brings together students, developers, designers, and entrepreneurs to solve real-world problems using technology. Supported by MPSEDC under the Vision 2047 initiative.
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {tracks.map(({ name, desc, icon: Icon, color }, i) => (
-              <AnimatedSection key={name}>
-                <motion.div
-                  whileHover={{ y: -8 }}
-                  className="glass rounded-2xl p-6 text-center card-hover h-full"
-                >
-                  <div className={`text-4xl mb-4 ${color} flex justify-center`}>
-                    <Icon />
-                  </div>
-                  <h3 className="font-display font-bold text-white text-lg mb-2">{name}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed font-body">{desc}</p>
-                </motion.div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
 

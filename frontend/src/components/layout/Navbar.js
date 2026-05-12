@@ -20,8 +20,6 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: 'Home', icon: FaHome },
     { to: '/results', label: 'Results', icon: FaTrophy },
-    { to: 'https://bgihackathon.in/about-bgi-hackathon', label: 'About', icon: FaInfoCircle, isExternal: true },
-    { to: 'https://bgihackathon.in/contact-us', label: 'Contact', icon: FaEnvelope, isExternal: true },
   ];
 
   const isActive = (to) => location.pathname === to;
