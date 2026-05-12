@@ -77,15 +77,6 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-bgi-primary/30 bg-bgi-primary/5 text-bgi-primary text-sm font-mono mb-8"
-          >
-            <span className="w-2 h-2 rounded-full bg-bgi-primary animate-pulse" />
-            Vision 2047 · Viksit Bharat · Supported by MPSEDC
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -98,14 +89,6 @@ const Home = () => {
             <span className="gradient-text">HACKATHON</span>
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-gray-300 text-xl md:text-2xl font-body max-w-2xl mx-auto leading-relaxed mb-10"
-          >
-            Where <span className="text-bgi-primary font-semibold">innovation meets opportunity</span>. Build, create, and transform ideas into real-world solutions.
-          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -19,13 +19,7 @@ const Footer = () => {
                   Hackathon
                 </span>
               </div>
-              <div className="text-[9px] text-gray-300 font-mono font-bold tracking-[0.2em] uppercase leading-none mt-1">
-                Vision 2047 | Viksit Bharat
-              </div>
             </Link>
-            <p className="text-gray-400 leading-relaxed text-sm max-w-sm font-body">
-              A high-energy innovation challenge bringing together students, developers, designers, and entrepreneurs to solve real-world problems using technology.
-            </p>
             <div className="flex gap-4 mt-6">
               {[
                 { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
@@ -65,12 +59,6 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-bgi-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm font-body">
-            © 2025 BGI Hackathon. All rights reserved.
-          </p>
-          <p className="text-gray-600 text-xs font-mono">
-            Supported by MPSEDC · Vision 2047
-          </p>
         </div>
       </div>
     </footer>

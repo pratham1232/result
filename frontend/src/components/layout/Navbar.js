@@ -43,9 +43,6 @@ const Navbar = () => {
                 Hackathon
               </span>
             </div>
-            <div className="text-[9px] text-gray-300 font-mono font-bold tracking-[0.2em] uppercase leading-none mt-1">
-              Vision 2047 | Viksit Bharat
-            </div>
           </Link>
 
           {/* Desktop Nav */}
