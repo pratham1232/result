@@ -19,12 +19,12 @@ const Footer = () => {
                   Hackathon
                 </span>
               </div>
+              <div className="text-[9px] text-gray-300 font-mono font-bold tracking-[0.2em] uppercase leading-none mt-1">
+                Vision 2047 | Viksit Bharat
+              </div>
             </Link>
             <div className="flex gap-4 mt-6">
-              {[
-                { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-                { icon: FaInstagram, href: '#', label: 'Instagram' },
-              ].map(({ icon: Icon, href, label }) => (
+              {[{ icon: FaLinkedin, href: '#', label: 'LinkedIn' }, { icon: FaInstagram, href: '#', label: 'Instagram' }].map(({ icon: Icon, href, label }) => (
                 <motion.a
                   key={label}
                   href={href}
@@ -41,11 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-white mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
             <ul className="space-y-3">
-              {[
-                { to: '/', label: 'Home' },
-                { to: '/results', label: 'Results' },
-                { to: '/admin/login', label: 'Admin Panel' },
-              ].map(({ to, label }) => (
+              {[{ to: '/', label: 'Home' }, { to: '/results', label: 'Results' }, { to: '/admin/login', label: 'Admin Panel' }].map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="text-gray-400 hover:text-bgi-primary transition-colors text-sm font-body flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-bgi-primary opacity-0 group-hover:opacity-100 transition-opacity" />
