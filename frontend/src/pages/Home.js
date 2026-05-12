@@ -2,9 +2,8 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import {
-  FaRocket, FaTrophy, FaBrain,
-  FaArrowRight,
-  FaLeaf, FaMobileAlt, FaShieldAlt, FaRobot, FaCity, FaStethoscope
+  FaTrophy,
+  FaArrowRight
 } from 'react-icons/fa';
 
 const ParticleField = () => (
@@ -49,16 +48,6 @@ const AnimatedSection = ({ children, className }) => {
 };
 
 const Home = () => {
-  const tracks = [
-    { name: 'AI, Data Science & Intelligent Automation', desc: 'Harnessing the power of machine learning and big data for smart decision making.', icon: FaBrain, color: 'text-bgi-primary' },
-    { name: 'Smart Mobility, EVs & Logistics', desc: 'Innovating in electric vehicles, autonomous systems, and efficient supply chains.', icon: FaRocket, color: 'text-bgi-secondary' },
-    { name: 'Agriculture, FoodTech & Rural Innovation', desc: 'Modernizing farming and supply chains to empower the heart of India.', icon: FaLeaf, color: 'text-green-500' },
-    { name: 'Mobile & Next-Gen App Innovation', desc: 'Building high-performance, user-centric mobile experiences for the digital age.', icon: FaMobileAlt, color: 'text-blue-400' },
-    { name: 'Cybersecurity, Blockchain & Digital Trust', desc: 'Securing the future of digital interactions and decentralized technologies.', icon: FaShieldAlt, color: 'text-purple-400' },
-    { name: 'Robotics, Drones & Industry 5.0', desc: 'Designing the next generation of automation and human-centric industrial systems.', icon: FaRobot, color: 'text-orange-400' },
-    { name: 'Smart Cities & Urban Innovation', desc: 'Creating sustainable, connected, and resilient urban environments.', icon: FaCity, color: 'text-cyan-400' },
-    { name: 'Healthcare, BioTech & Digital Health', desc: 'Revolutionizing patient care, diagnostics, and biotechnology for better life outcomes.', icon: FaStethoscope, color: 'text-red-400' },
-  ];
 
   return (
     <div className="min-h-screen bg-bgi-darker">

@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   FaArrowLeft, FaIdCard, FaUserTie, FaLightbulb, 
-  FaTools, FaDownload, FaShareAlt, FaTrophy, FaEnvelope 
+  FaTools, FaDownload, FaShareAlt, FaTrophy 
 } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import { resultsAPI } from '../services/api';
@@ -178,20 +178,6 @@ const ResultDetails = () => {
               </div>
             </div>
 
-            <div className="glass rounded-3xl p-6 border border-bgi-primary/10 bg-gradient-to-br from-bgi-primary/5 to-transparent">
-              <h3 className="text-white font-display font-bold mb-2 tracking-tight">Need Help?</h3>
-              <p className="text-gray-400 text-sm font-body mb-4 leading-relaxed">
-                If you have any queries regarding your result, please contact the hackathon committee via our official contact page.
-              </p>
-              <a 
-                href="https://bgihackathon.in/contact-us"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full py-3 rounded-xl text-xs font-display font-bold inline-flex items-center justify-center gap-2"
-              >
-                <FaEnvelope /> Get in Touch
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>
