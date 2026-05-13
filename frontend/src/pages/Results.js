@@ -6,7 +6,11 @@ import ResultCard from '../components/results/ResultCard';
 import ResultsSkeleton from '../components/ui/ResultsSkeleton';
 import { resultsAPI } from '../services/api';
 
-const FILTERS = ['All', 'Selected', 'Rejected', 'Pending', 'Shortlisted'];
+// const FILTERS = ['All', 'Selected', 'Rejected', 'Pending', 'Shortlisted'];
+
+
+const FILTERS = ['All', 'Selected', 'Shortlisted'];
+
 
 const EmptyState = ({ query }) => (
   <motion.div
