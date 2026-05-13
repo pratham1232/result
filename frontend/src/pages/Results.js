@@ -9,7 +9,7 @@ import { resultsAPI } from '../services/api';
 // const FILTERS = ['All', 'Selected', 'Rejected', 'Pending', 'Shortlisted'];
 
 
-const FILTERS = ['All', 'Selected', 'Shortlisted'];
+const FILTERS = ['All', 'Shortlisted'];
 
 
 const EmptyState = ({ query }) => (
